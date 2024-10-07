@@ -24,7 +24,7 @@ pip install -r requirements.txt
 Start the application with:
 
 
-streamlit run app.py
+streamlit run app\main.py
 Example
 Cuisine: Mexican
 Restaurant Name: Tacos El Rey
