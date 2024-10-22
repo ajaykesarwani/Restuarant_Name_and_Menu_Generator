@@ -30,3 +30,7 @@ Cuisine: Mexican
 Restaurant Name: Tacos El Rey
 Menu Items: Chicken Tacos, Beef Burritos, Guacamole, etc.
 This shorter version provides all the key details, focusing on use cases, features, and how to set it up.
+
+================================================================================================================
+You can also go to my hosted page in the below link:- https://restuarant-name-menu-generator.streamlit.app/
+================================================================================================================
