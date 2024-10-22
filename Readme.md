@@ -33,6 +33,6 @@ This shorter version provides all the key details, focusing on use cases, featur
 
 ================================================================================================================
 
-You can also go to my hosted page in the below link:- https://restuarant-name-menu-generator.streamlit.app/
+You can also visit my page :- https://restuarant-name-menu-generator.streamlit.app/
 
 ================================================================================================================
