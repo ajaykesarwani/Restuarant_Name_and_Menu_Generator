@@ -25,7 +25,8 @@ You want to open a new Italian restaurant in your city. Instead of brainstorming
    pip install -r requirements.txt
 3. **Run the Streamlit App:**
     ```bash
-    Start the application with:
+    streamlit run app\main.py
+
 
 ## Example
 * Cuisine: Mexican
