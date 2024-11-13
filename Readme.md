@@ -23,7 +23,7 @@ You want to open a new Italian restaurant in your city. Instead of brainstorming
    Make sure all required Python packages are installed by running:
    ```bash
    pip install -r requirements.txt
-3. ** Run the Streamlit App: **
+3. **Run the Streamlit App:**
     ```bash
     Start the application with:
 
@@ -33,10 +33,4 @@ You want to open a new Italian restaurant in your city. Instead of brainstorming
 * Menu Items: Chicken Tacos, Beef Burritos, Guacamole, etc.
 * This shorter version provides all the key details, focusing on use cases, features, and how to set it up.
 
-You can also visit my page: Restaurant Name Generator 
-
-=====================================================================================
-
-You can also visit my page :- https://restuarant-name-menu-generator.streamlit.app/
-
-=====================================================================================
+You can also visit my page: Restaurant Name Generator  [Restaurant Name Generator]([http://marsyas.info/](https://restuarant-name-menu-generator.streamlit.app/))
