@@ -1,13 +1,12 @@
 import streamlit as st
-from langchain_helper import generate_restaurant_name_and_items
-
+import langchain_helper
 st.title("Restaurant Name and Menu Generator")
 
 cuisine = st.text_input("Enter a cuisine (e.g., Italian, Japanese):")
 
 if cuisine:
     try:
-        response = generate_restaurant_name_and_items(cuisine)
+        response = langchain_helper.generate_restaurant_name_and_items(cuisine)
         st.subheader("🍽️ Restaurant Name:")
         st.write(response['restaurant_name'])
 
