@@ -2,6 +2,6 @@ openai
 google-search-results
 streamlit
 python-dotenv
-langchain==0.1.17
+langchain
 langchain-community==0.0.30
 langchain-groq==0.0.3
