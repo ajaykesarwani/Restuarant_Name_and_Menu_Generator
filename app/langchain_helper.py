@@ -10,7 +10,7 @@ load_dotenv()
 llm = ChatGroq(
     temperature=0.9,
     groq_api_key=os.getenv("GROQ_API_KEY"),
-    model_name="llama-3.1-70b-versatile"
+    model_name="llama3-70b-8192"
 )
 
 def generate_restaurant_name_and_items(cuisine):
