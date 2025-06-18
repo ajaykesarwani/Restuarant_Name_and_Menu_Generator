@@ -3,5 +3,5 @@ google-search-results
 streamlit
 python-dotenv
 langchain
-langchain-community==0.0.30
-langchain-groq==0.0.3
+langchain-community
+langchain-groq
