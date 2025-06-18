@@ -1,5 +1,5 @@
 import streamlit as st
-from app.langchain_helper import generate_restaurant_name_and_items
+from langchain_helper import generate_restaurant_name_and_items
 
 st.title("Restaurant Name and Menu Generator")
 
