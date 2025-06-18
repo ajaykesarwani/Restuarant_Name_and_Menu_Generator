@@ -1,4 +1,6 @@
 from langchain.chains import SimpleSequentialChain
+from langchain.prompts import PromptTemplate
+
 
 def generate_restaurant_name_and_items(cuisine):
     # Chain 1: Restaurant Name
