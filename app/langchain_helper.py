@@ -1,6 +1,6 @@
 from langchain_core.prompts import PromptTemplate
 from langchain_core.chains import SequentialChain
-from langchain.chains import LLMChain  # as of langchain==0.1.17
+from langchain.chains import LLMChain 
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 import os
