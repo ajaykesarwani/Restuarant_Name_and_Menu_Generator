@@ -1,12 +1,11 @@
+from langchain_core.prompts import PromptTemplate
+from langchain_core.chains import SequentialChain
+from langchain.chains import LLMChain  # as of langchain==0.1.17
+from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 import os
 
-# Load environment variables
 load_dotenv()
-
-from langchain_core.prompts import PromptTemplate
-from langchain_core.chains import SequentialChain, LLMChain
-from langchain_groq import ChatGroq
 
 llm = ChatGroq(
     temperature=0.9,
@@ -15,6 +14,7 @@ llm = ChatGroq(
 )
 
 def generate_restaurant_name_and_items(cuisine):
+    # Prompt for restaurant name
     prompt_template_name = PromptTemplate(
         input_variables=['cuisine'],
         template="I want to open a restaurant for {cuisine} food. Suggest one fancy name for this. No description."
@@ -22,6 +22,7 @@ def generate_restaurant_name_and_items(cuisine):
 
     name_chain = LLMChain(llm=llm, prompt=prompt_template_name, output_key="restaurant_name")
 
+    # Prompt for menu items
     prompt_template_items = PromptTemplate(
         input_variables=['restaurant_name'],
         template="Suggest some menu items for {restaurant_name}. Return it as a comma-separated string. No Preamble."
@@ -29,6 +30,7 @@ def generate_restaurant_name_and_items(cuisine):
 
     food_items_chain = LLMChain(llm=llm, prompt=prompt_template_items, output_key="menu_items")
 
+    # Sequential chain
     chain = SequentialChain(
         chains=[name_chain, food_items_chain],
         input_variables=["cuisine"],
