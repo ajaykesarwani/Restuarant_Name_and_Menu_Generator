@@ -3,7 +3,7 @@ from app.langchain_helper import generate_restaurant_name_and_items
 
 st.title("Restaurant Name and Menu Generator")
 
-cuisine = st.sidebar.selectbox("Pick a Cuisine", ("Indian", "Chinese", "Thai","Italian", "Mexican", "American"))
+cuisine = st.text_input("Enter a cuisine (e.g., Italian, Japanese):")
 
 if cuisine:
     try:
